@@ -1,8 +1,12 @@
 from flask import Flask
+from flask import render_template
+
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello MSOE'
+    return render_template('index.html')
 
-
+@app.route('/enhanced')
+def enhancement():
+    return render_template('enhanced.html')
