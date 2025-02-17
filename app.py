@@ -7,6 +7,6 @@ app = Flask(__name__)
 def hello_world():
     return render_template('index.html')
 
-@app.route('/enhanced')
+@app.route('/enhanced/')
 def enhancement():
     return render_template('enhanced.html')
